@@ -1,0 +1,398 @@
+main{
+width: 1366px;
+height: 2600px;
+background-color: rgb(255, 255, 255);
+background-image: url(../imagenes/squared-paper-texture.jpg);
+background-size: contain;
+
+
+}
+
+@font-face {
+    font-family: gloria;
+    src: url(../fuentes/GloriaHallelujah-Regular.ttf);
+   
+}
+
+@font-face {
+    font-family: indie;
+    src: url(../fuentes/IndieFlower-Regular.ttf);
+   
+}
+@font-face {
+    font-family: shadow;
+    src: url(../fuentes/ShadowsIntoLight-Regular.ttf);
+}
+@font-face {
+    font-family: donarbold;
+    src: url(../fuentes/AmaticSC-Bold.ttf);
+}
+@font-face {
+    font-family: donarregular;
+    src: url(../fuentes/AmaticSC-Regular.ttf);
+}
+
+header{
+width: 1366px;
+height: 200px;
+background-color: rgb(255, 255, 255);
+display: flex;
+align-items: center;
+}
+header img{
+
+align-items: center;
+display: flex;
+margin-left: 583px;
+
+}
+nav{
+    width: 1366px;
+    height: 50px;
+    background-color: rgb(60, 199, 102);
+    position: sticky;
+    top: 0;
+    z-index: 1 ;
+    box-shadow: 0px 5px 8px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    overflow: hidden;
+}
+nav a{
+text-decoration: none;
+padding: 15px;
+transition: .5s;
+font-family: gloria;
+color: rgb(54, 54, 51);
+
+}
+
+nav a:hover{
+    transform: scale(1.3);
+    background-color: rgb(24, 78, 40);
+   color: rgb(255, 255, 255);
+}
+
+.video{
+width: 1366px;
+height: 400px;
+
+float: left;
+}
+.video div:first-child{
+    width: 541px;
+    height: 300px;
+  
+    padding: 25px;
+    margin-left: 25px;
+    margin-top: 25px;
+  float: left;
+    
+}
+.video img{
+float: left;
+
+z-index: 0;
+margin-top: 40px;
+margin-left: 40px;
+transform: rotate(-7deg);
+box-shadow: 13px 15px 8px rgba(77, 129, 145, 0.884);
+transition: 1s;
+border-radius: 15px;
+
+
+}
+
+.video img:hover{
+    scale: 1.2;
+}
+    
+
+
+
+
+.video h1{
+   
+    width: 210px;
+    height: 200px;
+    padding: 25px;
+    float: right;
+  margin-top: 0px;
+  color: rgb(4, 110, 36);
+  font-size: 40px;
+  font-family: gloria;
+
+}
+
+
+.video iframe{
+    box-shadow: -10px 10px 6px rgba(77, 129, 145, 0.884);
+}
+
+.video div:last-child{
+
+width: 650px;
+height: 300px;
+
+padding: 25px;
+margin-left: 25px;
+margin-top: 25px;
+
+float: left;
+
+
+
+}
+.video iframe{
+    float: left;
+    margin-left: 75px;
+}
+.info{
+width: 966px;
+height: 1700px;
+
+float: left;
+
+
+}
+aside{
+    width: 400px;
+    height: 1700px;
+   background-color: rgb(248, 202, 170);
+    float: left;
+    box-shadow: -10px 10px 6px rgba(120, 183, 202, 0.884);
+    border-radius: 25px;
+}
+
+aside div:first-child{
+width: 300px;
+height: 950px;
+
+float: left;
+margin-top: 25px;
+margin-left: 25px;
+padding: 25px;
+
+
+}
+aside div:last-child{
+    width: 300px;
+    height: 575px;
+    background-color: rgb(250, 167, 107);
+float: left;
+margin-top: 25px;
+margin-left: 25px;
+padding: 25px;
+border-radius: 25px;
+}
+aside form{
+font-family: donarregular;
+    height: 275px;
+    width: 300px;
+    float: left;
+
+}
+form p{
+    margin-top: 0;
+    font-family: donarbold;
+}
+aside .red3{
+border-radius: 150px;
+transition: 1.2s;
+float: left;
+margin-left: 12px;
+}
+aside .red3:hover{
+    transform: scale(1.2);
+}
+
+aside h2{
+   
+    float: left;
+    margin-top: 30px;
+    width: 300px;
+    text-align: justify;
+    font-family: shadow;
+    font-size: 25px;
+    text-align: center;
+   
+}
+
+aside .text5{
+ width: 300px;
+ 
+ 
+    float: left;
+    text-align: justify;
+    margin-top: 0px;
+    font-family: shadow;
+    font-size: 15px;
+  
+}
+
+aside .reciclar{
+    border-radius: 150px;
+    animation-duration: 10s;
+    animation-name: girar;
+    animation-iteration-count: infinite;
+    float: left;
+    margin-top: 5px;
+}
+
+
+
+@keyframes girar{
+form{
+transform: rotate(0deg);
+}
+to{
+transform: rotate(360deg);
+}
+
+
+}
+
+.info div:first-child{
+width: 866px;
+height: 762px;
+background-color: rgba(50, 211, 130, 0.233);
+margin-top: 25px;
+margin-left: 25px;
+padding: 25px;
+border-radius: 25px;
+}
+
+.info p{
+font-family: indie;
+
+}
+
+.info h3{
+
+font-family: shadow;
+font-size: 25px;
+}
+.info .text1{
+width: 350px;
+height: 275px;
+background-color: rgba(209, 255, 149, 0.397);
+float: left;
+padding: 25px;
+margin-top: 25px;
+text-align: justify;
+border-radius: 25px;
+
+}
+.info .grafica{
+    float: right;
+    margin-top: 25px;
+    margin-right: 25px;
+    box-shadow: 10px 10px 6px rgb(60, 92, 100);
+    transform: rotate(2deg);
+
+}
+.info h2{
+   
+    margin-top: 0px;
+    width: 866px;
+    height: 50px;
+    font-family: shadow;
+    font-size: 25px;
+}
+.info .text2{
+    width: 816px;
+    height: 250px;
+  background-color: rgba(163, 223, 231, 0.637);
+    float: left;
+    padding: 25px;
+    text-align: justify;
+    border-radius: 25px;
+}
+
+.info div:last-child{
+    width: 866px;
+    height: 762px;
+    background-color: rgba(171, 216, 98, 0.877);
+    margin-top: 25px;
+    margin-left: 25px;
+    padding: 25px;
+    box-shadow: -10px 10px 6px rgba(120, 183, 202, 0.884);
+    border-radius: 25px;
+}
+
+.info .text3{
+    width: 560px;
+    height: 220px;
+   background-color: rgb(255, 215, 189);
+    float: left;
+    padding: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+.info .text4{
+    width: 560px;
+    height: 250px;
+    background-color: rgb(255, 215, 189);
+    float: left;
+    padding: 25px;
+    text-align: justify;
+    margin-left: 25px;
+    font-size: 14px;
+    border-radius: 25px;
+}
+.info .red{
+float: left;
+margin-top: 75px;
+border-radius: 225px;
+transition: 1s;
+}
+.info .red:hover{
+transform: scale(1.2);
+}
+
+
+.info .red2{
+    float: left;
+margin-top: 25px;
+border-radius: 225px;
+transition: 1s;
+}
+.info .red2:hover{
+transform: scale(1.2);
+}
+
+.info .titl{
+   
+   height: 25px;
+   float: left;
+   margin-left: 25px;
+}
+.info .titl2{
+  
+   height: 25px;
+   float: left;
+   margin-left: 25px;
+}
+footer{
+    width: 1366px;
+    height: 250px;
+    background-color: rgb(18, 24, 19);
+    float: left;
+}
+footer h4{
+    margin-left: 50px;
+    color: rgb(192, 190, 187);
+    font-family: donarbold;
+    font-size: 25px;
+}
+footer img{
+    float: left;
+    margin-left: 50px;
+}
+footer p{
+    color: rgb(170, 167, 164);
+    font-family: donarbold;
+}
